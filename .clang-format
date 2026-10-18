@@ -1,0 +1,84 @@
+Language: Cpp
+Standard: c++20
+ColumnLimit: 120
+
+# Отступы
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+
+# Фигурные скобки: K&R
+BreakBeforeBraces: Attach
+
+# Пробелы
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpaceInEmptyParentheses: false
+PointerAlignment: Left
+ReferenceAlignment: Pointer
+
+# Переносы строк
+BreakConstructorInitializers: BeforeComma
+ConstructorInitializerIndentWidth: 4
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+BinPackArguments: false
+BinPackParameters: false
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+BreakBeforeBinaryOperators: None
+BreakBeforeTernaryOperators: true
+
+# Классы
+AccessModifierOffset: -4
+IndentAccessModifiers: false
+EmptyLineBeforeAccessModifier: LogicalBlock
+
+# Порядок include
+SortIncludes: true
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^"'
+    Priority: 1
+  - Regex: '^<'
+    Priority: 2
+
+# Пространства имён
+NamespaceIndentation: All
+CompactNamespaces: false
+
+# Инициализация
+Cpp11BracedListStyle: true
+SpaceBeforeCpp11BracedList: true
+DerivePointerAlignment: false
+
+# Перечисления и классы
+BreakBeforeInheritanceComma: false
+PackConstructorInitializers: Never
+SeparateDefinitionBlocks: Always
+
+# Комментарии
+ReflowComments: true
+SpacesBeforeTrailingComments: 2
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 0
+
+# Пустые строки
+MaxEmptyLinesToKeep: 1
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# Макросы и препроцессор
+IndentPPDirectives: None
+
+# Лямбда-выражения
+LambdaBodyIndentation: Signature
+
+# Конец файла
+InsertNewlineAtEOF: true
